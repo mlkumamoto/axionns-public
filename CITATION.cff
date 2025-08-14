@@ -37,6 +37,9 @@ identifiers:
   - type: url
     value: 'https://arxiv.org/abs/2410.21590'
     description: arxiv link
+  - type: doi
+    value: 10.1103/5zgm-z4v9
+    description: Phys Rev D publication
 repository-code: 'https://github.com/mlkumamoto/axionns-public'
 abstract: 'Code associated with https://arxiv.org/abs/2410.21590'
 license: BSD-3-Clause
