@@ -881,6 +881,7 @@ class rmfAxionModel:
             + rho_sat * (1 - xp) * (mn + 3 / (10 * mn) * kfn**2) + interaction_energy * rho_sat) + self.eps * F_PION**2 * PION_MASS**2 * (1 - ftheta)
 
         return [kfp, kfn, mue, energy_density, pressure, nucleus_vol_frac, ftheta]
+    
 #these are a selection of standard rmf models with axions included
 def iufsu_star(sigpin, delta_sigma, eps, dsig, dw = 0, drho = 0):
     return rmfAxionModel(sigpin, delta_sigma, eps, dsig, dw, drho, msig=NEUTRON_MASS*0.543,mw=NEUTRON_MASS*0.8331,mrho=NEUTRON_MASS*0.8198,gsig=4*pi*0.8379,gw=4*pi*1.0666,grho=4*pi*0.9889,kappa3=1.1418,
